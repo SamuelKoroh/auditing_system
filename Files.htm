@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<title>Files</title>
+<meta name="description" content="Rich Text Editor, Asp.net chat, file upload, control">
+<meta name="keywords" content="Rich Text Editor, Asp.net chat, file upload, control">
+<meta name="GENERATOR" content="CommunityServer 2.1 SP3 (Build: 20423.1)">
+<link rel="shortcut icon" type="image/ico" href="">
+
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <script src="Files_files/ga.js" async="" type="text/javascript"></script><script src="Files_files/global.js" type="text/javascript"></script>
+            <style type="text/css"> body { font-size: 84%; } </style>
+			<link rel="stylesheet" href="Files_files/Common.css" type="text/css" media="screen">
+			<link rel="stylesheet" href="Files_files/File.css" type="text/css" media="screen">
+			<link rel="stylesheet" href="Files_files/common_print.css" type="text/css" media="print">
+			<link rel="stylesheet" href="Files_files/file_print.css" type="text/css" media="print">
+        </head>
+
+<body>
+    <form method="post" action="./default.aspx" id="MPForm1">
+<div class="aspNetHidden">
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTUyNjMwODA2MA9kFgJmD2QWAmYPZBYCAgIPZBYCZg9kFgICAw9kFgYCBQ9kFgJmD2QWAmYPZBYMZg8PFgYeBFRleHQFDlN1cHBvcnQgZm9ydW1zHgdUb29sVGlwBTdMaXZlIFN1cHBvcnQsIENoYXQsIFVwbG9hZCBDb250cm9sIGFuZCBSaWNoIFRleHQgRWRpdG9yHgtOYXZpZ2F0ZVVybAUBL2RkAgEPFgIfAAU3TGl2ZSBTdXBwb3J0LCBDaGF0LCBVcGxvYWQgQ29udHJvbCBhbmQgUmljaCBUZXh0IEVkaXRvcmQCAg9kFgJmD2QWBAIBD2QWAmYPZBYCAgEPZBYCZg9kFgRmDxYCHwAFGVdlbGNvbWUgdG8gU3VwcG9ydCBmb3J1bXNkAgIPFgIeB1Zpc2libGVnFgRmDw8WBB8ABQdTaWduIGluHwIFMS9sb2dpbi5hc3B4P1JldHVyblVybD0lMmZEb3dubG9hZHMlMmZkZWZhdWx0LmFzcHhkZAICDw8WBB8ABQRKb2luHwIFNy91c2VyL0NyZWF0ZVVzZXIuYXNweD9SZXR1cm5Vcmw9L0Rvd25sb2Fkcy9kZWZhdWx0LmFzcHhkZAIFDw8WBB8CBR4vbGFuZ3VhZ2VzL2VuLVVTL2RvY3MvZmFxLmFzcHgfAAUESGVscGRkAgMPD2QWAh4Jb25rZXlkb3duBT9LZXlEb3duSGFuZGxlcmN0bDAwX2N0bDAxX2JoY3JfdF9fX1RpdGxlQmFyU2VhcmNoQnV0dG9uKGV2ZW50KTtkAgQPFgIfA2gWAgIBDxBkZBYAZAIFDw8WBB8ABQZTZWFyY2geEENhdXNlc1ZhbGlkYXRpb25oZGQCCQ9kFgJmD2QWAgIBD2QWAmYPZBYCAgMPDxYCHg9FbmFibGVWaWV3U3RhdGVnZGQCCw9kFgJmD2QWAgIBD2QWAmYPZBYOAgEPDxYEHgdFbmFibGVkaB8DaGRkAgUPDxYEHwAFDk1vc3QgRG93bmxvYWRzHwIFJi9kb3dubG9hZHMvZGVmYXVsdC5hc3B4P1NvcnQ9RG93bmxvYWRzFgIeBXN0eWxlBRFmb250LXdlaWdodDpib2xkO2QCBw8PFgQfAAUMTW9zdCBQb3B1bGFyHwIFJC9kb3dubG9hZHMvZGVmYXVsdC5hc3B4P1NvcnQ9UmF0aW5nc2RkAgkPDxYEHwAFC01vc3QgUmVjZW50HwIFIS9kb3dubG9hZHMvZGVmYXVsdC5hc3B4P1NvcnQ9RGF0ZWRkAgsPDxYEHwAFDU1vc3QgQ29tbWVudHMfAgUlL2Rvd25sb2Fkcy9kZWZhdWx0LmFzcHg/U29ydD1Db21tZW50c2RkAg0PZBYCZg9kFgQCAQ8WAh8ABQ5Nb3N0IERvd25sb2Fkc2QCCQ8WAh4LXyFJdGVtQ291bnQCChYUZg9kFhACAQ8WAh4EUG9zdAKQqwFkAgMPDxYEHwAFGDEuIEN1dGUgRWRpdG9yIGZvciAuTkVUIB8CBT8vZG93bmxvYWRzL2ZvbGRlcnMvY3V0ZV9lZGl0b3JfY3VycmVudF9yZWxlYXNlcy9lbnRyeTIxOTA0LmFzcHhkZAIFDxYCHwAFNUN1dGUgRWRpdG9yIGZvciAuTkVUIHZlcnNpb24gNi43IC0gIzEgV1lTSVdZRyBIVE1MLi4uZAIHDw8WBB4JUGljdHVyZUlEApCrAR4OQXBwbGljYXRpb25LZXkFHGN1dGVfZWRpdG9yX2N1cnJlbnRfcmVsZWFzZXNkZAIJDxYCHwAFEFdlZCwgTWFyIDA4IDIwMTdkAgsPFgIfAAUGMzIyNzYwZAINDw8WBB8KApCrAR8MBRxjdXRlX2VkaXRvcl9jdXJyZW50X3JlbGVhc2VzZGQCEQ8WAh8ABQYxNi4zTUJkAgEPZBYQAgEPFgIfCgKbqwFkAgMPDxYEHwAFITEuIENoYXQvV2ViIE1lc3NlbmdlciBzdGFuZGFsb25lIB8CBTgvZG93bmxvYWRzL2ZvbGRlcnMvY2hhdF9jdXJyZW50X3JlbGVhc2VzL2VudHJ5MjE5MTUuYXNweGRkAgUPFgIfAAU1Q3V0ZSBDaGF0IGlzIGEgZnVsbC1mZWF0dXJlZCBBU1AuTkVUIGNoYXQgcHJvZ3JhbS4uLi5kAgcPDxYEHwsCm6sBHwwFFWNoYXRfY3VycmVudF9yZWxlYXNlc2RkAgkPFgIfAAUQV2VkLCBNYXIgMDggMjAxN2QCCw8WAh8ABQYxMjczMjJkAg0PDxYEHwoCm6sBHwwFFWNoYXRfY3VycmVudF9yZWxlYXNlc2RkAhEPFgIfAAUFMy44TUJkAgIPZBYQAgEPFgIfCgKmqwFkAgMPDxYEHwAFKEFTUC5ORVQgSW1hZ2UgR2FsbGVyeSAoTmV3IHZlcnNpb24gMy4xISkfAgU7L2Rvd25sb2Fkcy9mb2xkZXJzL2dhbGxlcnlfY3VycmVudF9yZWxlYXNlcy9lbnRyeTIxOTI2LmFzcHhkZAIFDxYCHwAFNURvdE5ldEdhbGxlcnkgaXMgYW4gQVNQLk5FVCBzZXJ2ZXIgY29udHJvbCBkZXNpZ25lLi4uZAIHDw8WBB8LAqarAR8MBRhnYWxsZXJ5X2N1cnJlbnRfcmVsZWFzZXNkZAIJDxYCHwAFEFdlZCwgTWFyIDA4IDIwMTdkAgsPFgIfAAUFNTIxMjVkAg0PDxYEHwoCpqsBHwwFGGdhbGxlcnlfY3VycmVudF9yZWxlYXNlc2RkAhEPFgIfAAUFMS44TUJkAgMPZBYQAgEPFgIfCgLfqgFkAgMPDxYEHwAFHzEuIEN1dGUgTGl2ZSBTdXBwb3J0IHN0YW5kYWxvbmUfAgUzL2Rvd25sb2Fkcy9mb2xkZXJzL2N1cnJlbnRfcmVsZWFzZXMvZW50cnkyMTg1NS5hc3B4ZGQCBQ8WAh8ABTVDdXRlIGxpdmUgc3VwcG9ydCBpcyBhIHJlYWwtdGltZSBvbmxpbmUgY2hhdCBzdXBwby4uLmQCBw8PFgQfCwLfqgEfDAUQY3VycmVudF9yZWxlYXNlc2RkAgkPFgIfAAUQV2VkLCBNYXIgMDggMjAxN2QCCw8WAh8ABQU0MjAwMWQCDQ8PFgQfCgLfqgEfDAUQY3VycmVudF9yZWxlYXNlc2RkAhEPFgIfAAUFOS43TUJkAgQPZBYQAgEPFgIfCgKhvgNkAgMPDxYEHwAFH0N1dGUgRWRpdG9yIGZvciBDbGFzc2ljIEFTUCA2LjYfAgUtL2Rvd25sb2Fkcy9mb2xkZXJzL2FzcC1lZGl0b3IvZW50cnk1NzEyMS5hc3B4ZGQCBQ8WAh8ABTVMZWFkaW5nIE9ubGluZSBSaWNoIFRleHQgRWRpdG9yIEN1dGUgRWRpdG9yIGZvciBDbC4uLmQCBw8PFgQfCwKhvgMfDAUKYXNwLWVkaXRvcmRkAgkPFgIfAAUQV2VkLCBNYXIgMDggMjAxN2QCCw8WAh8ABQUyNzg5OWQCDQ8PFgQfCgKhvgMfDAUKYXNwLWVkaXRvcmRkAhEPFgIfAAUFNi40TUJkAgUPZBYQAgEPFgIfCgKcqwFkAgMPDxYEHwAFLjIuIENoYXQvV2ViIE1lc3NlbmdlciBmb3IgQ29tbXVuaXR5IFNlcnZlciAyLjEfAgU4L2Rvd25sb2Fkcy9mb2xkZXJzL2NoYXRfY3VycmVudF9yZWxlYXNlcy9lbnRyeTIxOTE2LmFzcHhkZAIFDxYCHwAFNUNoYXQvV2ViIE1lc3NlbmdlciBmb3IgQ29tbXVuaXR5IFNlcnZlciAyLjEgQ3V0ZSBDLi4uZAIHDw8WBh8LApyrAR8MBRVjaGF0X2N1cnJlbnRfcmVsZWFzZXMfA2hkZAIJDxYCHwAFEFdlZCwgTWFyIDA4IDIwMTdkAgsPFgIfAAUFMjE5NDhkAg0PDxYEHwoCnKsBHwwFFWNoYXRfY3VycmVudF9yZWxlYXNlc2RkAhEPFgIfAAUFNC44TUJkAgYPZBYQAgEPFgIfCgLtqgFkAgMPDxYEHwAFIUN1dGUgTGl2ZSBTdXBwb3J0IE9wZXJhdG9yIENsaWVudB8CBTIvZG93bmxvYWRzL2ZvbGRlcnMvb3BlcmF0b3JfY2xpZW50L2VudHJ5MjE4NjkuYXNweGRkAgUPFgIfAAU1Q3V0ZSBMaXZlIFN1cHBvcnQgT3BlcmF0b3IgQ2xpZW50IGlzIG91ciBkb3dubG9hZGEuLi5kAgcPDxYEHwsC7aoBHwwFD29wZXJhdG9yX2NsaWVudGRkAgkPFgIfAAUQV2VkLCBBdWcgMjYgMjAwOWQCCw8WAh8ABQUyMDI5NGQCDQ8PFgQfCgLtqgEfDAUPb3BlcmF0b3JfY2xpZW50ZGQCEQ8WAh8ABQc5MDAuNGtCZAIHD2QWEAIBDxYCHwoChOABZAIDDw8WBB8ABSo2LiBDaGF0L1dlYiBNZXNzZW5nZXIgaW50ZWdyYXRpb24gcGFja2FnZSAfAgU4L2Rvd25sb2Fkcy9mb2xkZXJzL2NoYXRfY3VycmVudF9yZWxlYXNlcy9lbnRyeTI4Njc2LmFzcHhkZAIFDxYCHwAFNUN1dGUgQ2hhdCBpcyBhIGZ1bGwtZmVhdHVyZWQgQVNQLk5FVCBjaGF0IHByb2dyYW0uLi4uZAIHDw8WBB8LAoTgAR8MBRVjaGF0X2N1cnJlbnRfcmVsZWFzZXNkZAIJDxYCHwAFEFdlZCwgTWFyIDA4IDIwMTdkAgsPFgIfAAUFMTg3NzBkAg0PDxYEHwoChOABHwwFFWNoYXRfY3VycmVudF9yZWxlYXNlc2RkAhEPFgIfAAUFNC44TUJkAggPZBYQAgEPFgIfCgKdqwFkAgMPDxYEHwAFKzMuIENoYXQvTWVzc2VuZ2VyIGZvciBDb21tdW5pdHkgU2VydmVyIDIwMDcfAgU4L2Rvd25sb2Fkcy9mb2xkZXJzL2NoYXRfY3VycmVudF9yZWxlYXNlcy9lbnRyeTIxOTE3LmFzcHhkZAIFDxYCHwAFNUNoYXQvV2ViIE1lc3NlbmdlciBmb3IgQ29tbXVuaXR5IFNlcnZlciAyMDA3IEN1dGUgLi4uZAIHDw8WBB8LAp2rAR8MBRVjaGF0X2N1cnJlbnRfcmVsZWFzZXNkZAIJDxYCHwAFEFdlZCwgTWFyIDA4IDIwMTdkAgsPFgIfAAUFMTY4NDFkAg0PDxYEHwoCnasBHwwFFWNoYXRfY3VycmVudF9yZWxlYXNlc2RkAhEPFgIfAAUFNC45TUJkAgkPZBYQAgEPFgIfCgKRqwFkAgMPDxYEHwAFITIuIEN1dGUgRWRpdG9yIGZvciBEb3ROZXROdWtlIDQueB8CBT8vZG93bmxvYWRzL2ZvbGRlcnMvY3V0ZV9lZGl0b3JfY3VycmVudF9yZWxlYXNlcy9lbnRyeTIxOTA1LmFzcHhkZAIFDxYCHwAFNSggVmVyc2lvbiA2LjYgKSBDdXRlIEVkaXRvciBmb3IgRG90TmV0TnVrZSA0LnggLSAjLi4uZAIHDw8WBB8LApGrAR8MBRxjdXRlX2VkaXRvcl9jdXJyZW50X3JlbGVhc2VzZGQCCQ8WAh8ABRBXZWQsIE1hciAwOCAyMDE3ZAILDxYCHwAFBTE2NDYyZAINDw8WBB8KApGrAR8MBRxjdXRlX2VkaXRvcl9jdXJyZW50X3JlbGVhc2VzZGQCEQ8WAh8ABQU4LjFNQmQCDw8PFgQfB2gfA2hkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUnY3RsMDAkY3RsMDEkYmhjciR0JF8kVGl0bGVCYXJTZWFyY2hUZXh09ABRHXqgmr6jXw3piWZvL/1//Hk=" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['MPForm1'];
+if (!theForm) {
+    theForm = document.MPForm1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script language="javascript" type="text/javascript" src="Files_files/Telligent_Modal.js"></script><script language="javascript" type="text/javascript">
+// <![CDATA[
+Telligent_Modal.Configure('/utility/loading.htm',['CommonModal'],['CommonModalTitle'],['CommonModalClose'],['CommonModalContent'],['CommonModalFooter'],['CommonModalResize'],['CommonModalMask'],100);
+// ]]>
+</script><script type="text/javascript" src="Files_files/ratingcontrol.js"></script>
+<div class="aspNetHidden">
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BD4A2175" type="hidden">
+</div>
+        
+        
+        <div id="CommonHeader" class="container">
+            
+<div class="CommonTitleBar">
+	 <table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tbody><tr>
+			<td class="CommonTitleBarImage">
+				<a href="http://cutesoft.net/"><img src="Files_files/title.gif" alt=""></a>
+			</td>
+			<td class="CommonTitleBarTitleArea">
+				<div class="CommonTitleBarTitle"><a id="ctl00_ctl01_bhcr_t___TitleBarSiteName" title="Live Support, Chat, Upload Control and Rich Text Editor" href="http://cutesoft.net/">Support forums</a></div>
+				<div class="CommonTitleBarDescription">Live Support, Chat, Upload Control and Rich Text Editor</div>                
+			</td>
+			<td style="vertical-align:middle;text-align:center;width: 70%"><div id="MyLiveChatContainer"></div></td>
+			<td class="CommonTitleBarSearchArea" nowrap="true">
+				<div class="CommonUserArea">
+					
+<div id="welcome">
+	
+			Welcome to Support forums
+<a id="ctl00_ctl01_bhcr_t___Displayuserwelcome1___ctl04___Login" href="http://cutesoft.net/login.aspx?ReturnUrl=%2fDownloads%2fdefault.aspx">Sign in</a> | <a id="ctl00_ctl01_bhcr_t___Displayuserwelcome1___ctl04___Register" href="http://cutesoft.net/user/CreateUser.aspx?ReturnUrl=/Downloads/default.aspx">Join</a>
+
+
+
+		
+
+	 |  <a href="http://cutesoft.net/languages/en-US/docs/faq.aspx">Help</a>
+    
+	|<a id="ctl00_ctl01_bhcr_t___Displayuserwelcome1___HyperLink1" href="http://clientcenter.cutesoft.net/">Client Center</a>
+</div>
+  
+				</div>
+				<div class="CommonSearch">
+					<table align="right" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="middle"><td nowrap="true">
+					<input vk_19608="subscribed" name="ctl00$ctl01$bhcr$t$_$TitleBarSearchText" maxlength="64" size="15" id="ctl00_ctl01_bhcr_t___TitleBarSearchText" onkeydown="KeyDownHandlerctl00_ctl01_bhcr_t___TitleBarSearchButton(event);" type="text">
+					
+					</td><td>
+					<span class="CommonSearchButtonOuter"><a id="ctl00_ctl01_bhcr_t___TitleBarSearchButton" class="CommonSearchButton" href="javascript:__doPostBack('ctl00$ctl01$bhcr$t$_$TitleBarSearchButton','')">Search</a></span>
+					</td></tr></tbody></table>
+				</div>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+        </div>
+        <div id="CommonTabBar">
+            
+            
+        <div id="navigation">
+          <ul>    
+	
+		<li><a href="http://cutesoft.net/"><span>Home</span></a></li>
+	
+		<li><a href="http://cutesoft.net/Products/"><span>Products</span></a></li>
+	
+		<li><a href="http://cutesoft.net/forums/default.aspx"><span>Forums</span></a></li>
+	
+		<li><a href="http://cutesoft.net/blogs/default.aspx"><span>Blogs</span></a></li>
+	
+		<li><a class="current" href="http://cutesoft.net/downloads/default.aspx"><span>Downloads</span></a></li>
+	
+		<li><a href="http://cutesoft.net/Support/"><span>Support</span></a></li>
+	
+		<li><a href="http://cutesoft.net/About+CuteSoft/"><span>Corporate</span></a></li>
+	
+		<li><a href="http://cutesoft.net/How+to+Buy/"><span>Purchase</span></a></li>
+	
+          </ul>
+          </div>
+	
+
+        </div>
+        <div class="container">
+            <table id="CommonBodyTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody><tr>
+                    <td id="CommonLeftColumn">
+                        
+		<div class="CommonSidebar">
+		
+
+<div class="CommonSidebarArea">
+	<h4 class="CommonSidebarHeader">Browse Folders</h4>
+	<div class="CommonSidebarContent">
+	
+<script src="Files_files/WebResource_004.axd" type="text/javascript"></script><script src="Files_files/WebResource_002.axd" type="text/javascript"></script><script src="Files_files/WebResource_003.axd" type="text/javascript"></script><script src="Files_files/WebResource.axd" type="text/javascript"></script><script src="Files_files/WebResource_005.axd" type="text/javascript"></script><script type="text/javascript">
+/*** ComponentArt Web.UI client-side storage for ctl00_ctl01_lcr_FolderTree___Tree ***/
+//<![CDATA[
+window.ComponentArt_Storage_ctl00_ctl01_lcr_FolderTree___Tree = [['p0',-1,[],[['ContentCallbackUrl','http://cutesoft.net/Downloads/default.aspx?___ctl00_ctl01_lcr_FolderTree=11:'],['ExpandedImageUrl','folders.gif'],['ImageUrl','folders.gif'],['NavigateUrl','/downloads/11/default.aspx'],['Text','Cute Live Support']]],['p1',-1,[],[['ContentCallbackUrl','http://cutesoft.net/Downloads/default.aspx?___ctl00_ctl01_lcr_FolderTree=12:'],['ExpandedImageUrl','folders.gif'],['ImageUrl','folders.gif'],['NavigateUrl','/downloads/12/default.aspx'],['Text','Cute Editor for .NET']]],['p2',-1,[],[['ContentCallbackUrl','http://cutesoft.net/Downloads/default.aspx?___ctl00_ctl01_lcr_FolderTree=13:'],['ExpandedImageUrl','folders.gif'],['ImageUrl','folders.gif'],['NavigateUrl','/downloads/13/default.aspx'],['Text','Cute Chat and Web Messenger']]],['p3',-1,[],[['ContentCallbackUrl','http://cutesoft.net/Downloads/default.aspx?___ctl00_ctl01_lcr_FolderTree=14:'],['ExpandedImageUrl','folders.gif'],['ImageUrl','folders.gif'],['NavigateUrl','/downloads/14/default.aspx'],['Text','ASP.NET Image Gallery']]],['p4',-1,[],[['ContentCallbackUrl','http://cutesoft.net/Downloads/default.aspx?___ctl00_ctl01_lcr_FolderTree=15:'],['ExpandedImageUrl','folders.gif'],['ImageUrl','folders.gif'],['NavigateUrl','/downloads/15/default.aspx'],['Text','AjaxUploader']]],['p5',-1,[],[['ContentCallbackUrl','http://cutesoft.net/Downloads/default.aspx?___ctl00_ctl01_lcr_FolderTree=16:'],['ExpandedImageUrl','folders.gif'],['ImageUrl','folders.gif'],['NavigateUrl','/downloads/16/default.aspx'],['Text','PHP File Uploader']]],['p6',-1,[],[['ContentCallbackUrl','http://cutesoft.net/Downloads/default.aspx?___ctl00_ctl01_lcr_FolderTree=17:'],['ExpandedImageUrl','folders.gif'],['ImageUrl','folders.gif'],['NavigateUrl','/downloads/17/default.aspx'],['Text','Cute Editor for PHP']]],['p7',-1,[],[['ContentCallbackUrl','http://cutesoft.net/Downloads/default.aspx?___ctl00_ctl01_lcr_FolderTree=18:'],['ExpandedImageUrl','folders.gif'],['ImageUrl','folders.gif'],['NavigateUrl','/downloads/18/default.aspx'],['Text','Cute Editor for ASP']]],['p8',-1,[],[['ContentCallbackUrl','http://cutesoft.net/Downloads/default.aspx?___ctl00_ctl01_lcr_FolderTree=19:'],['ExpandedImageUrl','folders.gif'],['ImageUrl','folders.gif'],['NavigateUrl','/downloads/19/default.aspx'],['Text','ASP File Uploader']]],['p9',-1,[],[['ContentCallbackUrl','http://cutesoft.net/Downloads/default.aspx?___ctl00_ctl01_lcr_FolderTree=20:'],['ExpandedImageUrl','folders.gif'],['ImageUrl','folders.gif'],['NavigateUrl','/downloads/20/default.aspx'],['Text','PHP Image Gallery']]],['pA',-1,[],[['ContentCallbackUrl','http://cutesoft.net/Downloads/default.aspx?___ctl00_ctl01_lcr_FolderTree=21:'],['ExpandedImageUrl','folders.gif'],['ImageUrl','folders.gif'],['NavigateUrl','/downloads/21/default.aspx'],['Text','ASP Image Gallery']]]]
+//]]>
+</script>
+<div style="position:absolute;top:0px;left:0px;visibility:hidden;"><img src="Files_files/folder.htm" alt="" height="0" width="0">
+<img src="Files_files/folder_open.htm" alt="" height="0" width="0">
+<img src="Files_files/i.gif" alt="" height="0" width="0">
+<img src="Files_files/l.gif" alt="" height="0" width="0">
+<img src="Files_files/r.gif" alt="" height="0" width="0">
+<img src="Files_files/t.gif" alt="" height="0" width="0">
+<img src="Files_files/lplus.gif" alt="" height="0" width="0">
+<img src="Files_files/rplus.gif" alt="" height="0" width="0">
+<img src="Files_files/tplus.gif" alt="" height="0" width="0">
+<img src="Files_files/lminus.gif" alt="" height="0" width="0">
+<img src="Files_files/rminus.gif" alt="" height="0" width="0">
+<img src="Files_files/tminus.gif" alt="" height="0" width="0">
+<img src="Files_files/minus.gif" alt="" height="0" width="0">
+<img src="Files_files/plus.gif" alt="" height="0" width="0">
+<img src="Files_files/dash.gif" alt="" height="0" width="0">
+<img src="Files_files/dashplus.gif" alt="" height="0" width="0">
+<img src="Files_files/dashminus.gif" alt="" height="0" width="0">
+<img src="Files_files/noexpand.gif" alt="" height="0" width="0">
+<img src="Files_files/folders.htm" alt="" height="0" width="0">
+</div><div id="ctl00_ctl01_lcr_FolderTree___Tree_div" class="FileFolderTree" style="overflow:auto;" onclick="if(window.ctl00_ctl01_lcr_FolderTree___Tree_loaded) ComponentArt_SetKeyboardFocusedTree(this, ctl00_ctl01_lcr_FolderTree___Tree);" onmouseover="if(window.ctl00_ctl01_lcr_FolderTree___Tree_loaded) ComponentArt_SetActiveTree(ctl00_ctl01_lcr_FolderTree___Tree);"><table id="ctl00_ctl01_lcr_FolderTree___Tree_item_0" class="" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td id="ctl00_ctl01_lcr_FolderTree___Tree_item_0_expcol" align="center"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(0,0)" style="display:block;" src="Files_files/rplus.gif" height="20" width="19"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(0,0)" style="display:none;" src="Files_files/rminus.gif" height="20" width="19"></td><td align="center" valign="center"><img style="display:block;" src="Files_files/folders.gif" id="ctl00_ctl01_lcr_FolderTree___Tree_item_0_icon" alt="" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,0);" height="16" width="16"></td><td style="padding-left: 3px;"><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_0_cell" class="FileFolderTreeNode" onmouseover="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,true,'FileFolderTreeNode','FileFolderTreeNodeHover');" onmouseout="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,false,'FileFolderTreeNode','FileFolderTreeNodeHover');" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,0);"><nobr>Cute Live Support</nobr></div></td><td width="100%"></td></tr></tbody></table><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_0_div" style="display: none;"></div><table id="ctl00_ctl01_lcr_FolderTree___Tree_item_1" class="" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td id="ctl00_ctl01_lcr_FolderTree___Tree_item_1_expcol" align="center"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(1,0)" style="display:block;" src="Files_files/tplus.gif" height="20" width="19"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(1,0)" style="display:none;" src="Files_files/tminus.gif" height="20" width="19"></td><td align="center" valign="center"><img style="display:block;" src="Files_files/folders.gif" id="ctl00_ctl01_lcr_FolderTree___Tree_item_1_icon" alt="" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,1);" height="16" width="16"></td><td style="padding-left: 3px;"><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_1_cell" class="FileFolderTreeNode" onmouseover="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,true,'FileFolderTreeNode','FileFolderTreeNodeHover');" onmouseout="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,false,'FileFolderTreeNode','FileFolderTreeNodeHover');" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,1);"><nobr>Cute Editor for .NET</nobr></div></td><td width="100%"></td></tr></tbody></table><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_1_div" style="display: none;"></div><table id="ctl00_ctl01_lcr_FolderTree___Tree_item_2" class="" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td id="ctl00_ctl01_lcr_FolderTree___Tree_item_2_expcol" align="center"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(2,0)" style="display:block;" src="Files_files/tplus.gif" height="20" width="19"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(2,0)" style="display:none;" src="Files_files/tminus.gif" height="20" width="19"></td><td align="center" valign="center"><img style="display:block;" src="Files_files/folders.gif" id="ctl00_ctl01_lcr_FolderTree___Tree_item_2_icon" alt="" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,2);" height="16" width="16"></td><td style="padding-left: 3px;"><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_2_cell" class="FileFolderTreeNode" onmouseover="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,true,'FileFolderTreeNode','FileFolderTreeNodeHover');" onmouseout="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,false,'FileFolderTreeNode','FileFolderTreeNodeHover');" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,2);"><nobr>Cute Chat and Web Messenger</nobr></div></td><td width="100%"></td></tr></tbody></table><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_2_div" style="display: none;"></div><table id="ctl00_ctl01_lcr_FolderTree___Tree_item_3" class="" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td id="ctl00_ctl01_lcr_FolderTree___Tree_item_3_expcol" align="center"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(3,0)" style="display:block;" src="Files_files/tplus.gif" height="20" width="19"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(3,0)" style="display:none;" src="Files_files/tminus.gif" height="20" width="19"></td><td align="center" valign="center"><img style="display:block;" src="Files_files/folders.gif" id="ctl00_ctl01_lcr_FolderTree___Tree_item_3_icon" alt="" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,3);" height="16" width="16"></td><td style="padding-left: 3px;"><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_3_cell" class="FileFolderTreeNode" onmouseover="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,true,'FileFolderTreeNode','FileFolderTreeNodeHover');" onmouseout="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,false,'FileFolderTreeNode','FileFolderTreeNodeHover');" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,3);"><nobr>ASP.NET Image Gallery</nobr></div></td><td width="100%"></td></tr></tbody></table><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_3_div" style="display: none;"></div><table id="ctl00_ctl01_lcr_FolderTree___Tree_item_4" class="" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td id="ctl00_ctl01_lcr_FolderTree___Tree_item_4_expcol" align="center"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(4,0)" style="display:block;" src="Files_files/tplus.gif" height="20" width="19"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(4,0)" style="display:none;" src="Files_files/tminus.gif" height="20" width="19"></td><td align="center" valign="center"><img style="display:block;" src="Files_files/folders.gif" id="ctl00_ctl01_lcr_FolderTree___Tree_item_4_icon" alt="" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,4);" height="16" width="16"></td><td style="padding-left: 3px;"><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_4_cell" class="FileFolderTreeNode" onmouseover="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,true,'FileFolderTreeNode','FileFolderTreeNodeHover');" onmouseout="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,false,'FileFolderTreeNode','FileFolderTreeNodeHover');" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,4);"><nobr>AjaxUploader</nobr></div></td><td width="100%"></td></tr></tbody></table><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_4_div" style="display: none;"></div><table id="ctl00_ctl01_lcr_FolderTree___Tree_item_5" class="" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td id="ctl00_ctl01_lcr_FolderTree___Tree_item_5_expcol" align="center"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(5,0)" style="display:block;" src="Files_files/tplus.gif" height="20" width="19"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(5,0)" style="display:none;" src="Files_files/tminus.gif" height="20" width="19"></td><td align="center" valign="center"><img style="display:block;" src="Files_files/folders.gif" id="ctl00_ctl01_lcr_FolderTree___Tree_item_5_icon" alt="" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,5);" height="16" width="16"></td><td style="padding-left: 3px;"><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_5_cell" class="FileFolderTreeNode" onmouseover="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,true,'FileFolderTreeNode','FileFolderTreeNodeHover');" onmouseout="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,false,'FileFolderTreeNode','FileFolderTreeNodeHover');" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,5);"><nobr>PHP File Uploader</nobr></div></td><td width="100%"></td></tr></tbody></table><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_5_div" style="display: none;"></div><table id="ctl00_ctl01_lcr_FolderTree___Tree_item_6" class="" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td id="ctl00_ctl01_lcr_FolderTree___Tree_item_6_expcol" align="center"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(6,0)" style="display:block;" src="Files_files/tplus.gif" height="20" width="19"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(6,0)" style="display:none;" src="Files_files/tminus.gif" height="20" width="19"></td><td align="center" valign="center"><img style="display:block;" src="Files_files/folders.gif" id="ctl00_ctl01_lcr_FolderTree___Tree_item_6_icon" alt="" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,6);" height="16" width="16"></td><td style="padding-left: 3px;"><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_6_cell" class="FileFolderTreeNode" onmouseover="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,true,'FileFolderTreeNode','FileFolderTreeNodeHover');" onmouseout="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,false,'FileFolderTreeNode','FileFolderTreeNodeHover');" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,6);"><nobr>Cute Editor for PHP</nobr></div></td><td width="100%"></td></tr></tbody></table><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_6_div" style="display: none;"></div><table id="ctl00_ctl01_lcr_FolderTree___Tree_item_7" class="" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td id="ctl00_ctl01_lcr_FolderTree___Tree_item_7_expcol" align="center"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(7,0)" style="display:block;" src="Files_files/tplus.gif" height="20" width="19"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(7,0)" style="display:none;" src="Files_files/tminus.gif" height="20" width="19"></td><td align="center" valign="center"><img style="display:block;" src="Files_files/folders.gif" id="ctl00_ctl01_lcr_FolderTree___Tree_item_7_icon" alt="" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,7);" height="16" width="16"></td><td style="padding-left: 3px;"><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_7_cell" class="FileFolderTreeNode" onmouseover="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,true,'FileFolderTreeNode','FileFolderTreeNodeHover');" onmouseout="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,false,'FileFolderTreeNode','FileFolderTreeNodeHover');" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,7);"><nobr>Cute Editor for ASP</nobr></div></td><td width="100%"></td></tr></tbody></table><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_7_div" style="display: none;"></div><table id="ctl00_ctl01_lcr_FolderTree___Tree_item_8" class="" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td id="ctl00_ctl01_lcr_FolderTree___Tree_item_8_expcol" align="center"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(8,0)" style="display:block;" src="Files_files/tplus.gif" height="20" width="19"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(8,0)" style="display:none;" src="Files_files/tminus.gif" height="20" width="19"></td><td align="center" valign="center"><img style="display:block;" src="Files_files/folders.gif" id="ctl00_ctl01_lcr_FolderTree___Tree_item_8_icon" alt="" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,8);" height="16" width="16"></td><td style="padding-left: 3px;"><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_8_cell" class="FileFolderTreeNode" onmouseover="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,true,'FileFolderTreeNode','FileFolderTreeNodeHover');" onmouseout="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,false,'FileFolderTreeNode','FileFolderTreeNodeHover');" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,8);"><nobr>ASP File Uploader</nobr></div></td><td width="100%"></td></tr></tbody></table><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_8_div" style="display: none;"></div><table id="ctl00_ctl01_lcr_FolderTree___Tree_item_9" class="" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td id="ctl00_ctl01_lcr_FolderTree___Tree_item_9_expcol" align="center"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(9,0)" style="display:block;" src="Files_files/tplus.gif" height="20" width="19"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(9,0)" style="display:none;" src="Files_files/tminus.gif" height="20" width="19"></td><td align="center" valign="center"><img style="display:block;" src="Files_files/folders.gif" id="ctl00_ctl01_lcr_FolderTree___Tree_item_9_icon" alt="" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,9);" height="16" width="16"></td><td style="padding-left: 3px;"><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_9_cell" class="FileFolderTreeNode" onmouseover="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,true,'FileFolderTreeNode','FileFolderTreeNodeHover');" onmouseout="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,false,'FileFolderTreeNode','FileFolderTreeNodeHover');" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,9);"><nobr>PHP Image Gallery</nobr></div></td><td width="100%"></td></tr></tbody></table><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_9_div" style="display: none;"></div><table id="ctl00_ctl01_lcr_FolderTree___Tree_item_10" class="" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td id="ctl00_ctl01_lcr_FolderTree___Tree_item_10_expcol" align="center"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(10,0)" style="display:block;" src="Files_files/lplus.gif" height="20" width="19"><img alt="" onclick="ComponentArt_CancelEvent(event);ctl00_ctl01_lcr_FolderTree___Tree.ToggleExpand(10,0)" style="display:none;" src="Files_files/lminus.gif" height="20" width="19"></td><td align="center" valign="center"><img style="display:block;" src="Files_files/folders.gif" id="ctl00_ctl01_lcr_FolderTree___Tree_item_10_icon" alt="" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,10);" height="16" width="16"></td><td style="padding-left: 3px;"><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_10_cell" class="FileFolderTreeNode" onmouseover="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,true,'FileFolderTreeNode','FileFolderTreeNodeHover');" onmouseout="ctl00_ctl01_lcr_FolderTree___Tree.HandleHover(this,false,'FileFolderTreeNode','FileFolderTreeNodeHover');" onclick="ctl00_ctl01_lcr_FolderTree___Tree.HandleClick(event,10);"><nobr>ASP Image Gallery</nobr></div></td><td width="100%"></td></tr></tbody></table><div id="ctl00_ctl01_lcr_FolderTree___Tree_item_10_div" style="display: none;"></div></div><input id="ctl00_ctl01_lcr_FolderTree___Tree_Data" name="ctl00_ctl01_lcr_FolderTree___Tree_Data" type="hidden"><input id="ctl00_ctl01_lcr_FolderTree___Tree_Properties" name="ctl00_ctl01_lcr_FolderTree___Tree_Properties" type="hidden"><input id="ctl00_ctl01_lcr_FolderTree___Tree_SelectedNode" name="ctl00_ctl01_lcr_FolderTree___Tree_SelectedNode" value="" type="hidden"><input id="ctl00_ctl01_lcr_FolderTree___Tree_ScrollData" name="ctl00_ctl01_lcr_FolderTree___Tree_ScrollData" value="0,0" type="hidden"><a href="#" onfocus="ComponentArt_SetKeyboardFocusedTree(document.getElementById('ctl00_ctl01_lcr_FolderTree___Tree_div'), ctl00_ctl01_lcr_FolderTree___Tree);" style="position:absolute;z-index:99;"></a><script type="text/javascript">
+//<![CDATA[
+window.ComponentArt_Init_ctl00_ctl01_lcr_FolderTree___Tree = function() {
+if(!window.ComponentArt_TreeView_Kernel_Loaded || !window.ComponentArt_TreeView_Keyboard_Loaded || !window.ComponentArt_TreeView_Support_Loaded || !window.ComponentArt_Utils_Loaded)
+	{setTimeout('ComponentArt_Init_ctl00_ctl01_lcr_FolderTree___Tree()', 100); return; }
+
+window.ctl00_ctl01_lcr_FolderTree___Tree = new ComponentArt_TreeView('ctl00_ctl01_lcr_FolderTree___Tree', ComponentArt_Storage_ctl00_ctl01_lcr_FolderTree___Tree);
+ctl00_ctl01_lcr_FolderTree___Tree.Properties = [['CollapseSlide',2],['CollapseDuration',200],['CollapseTransition',0],['CollapseNodeOnSelect',true],['ControlId','ctl00$ctl01$lcr$FolderTree$_$Tree'],['CssClass','FileFolderTree'],['DefaultImageHeight',16],['DefaultImageWidth',16],['MarginImageHeight',0],['MarginImageWidth',0],['DragHoverExpandDelay',700],['DropChildEnabled',true],['DropRootEnabled',true],['Enabled',true],['EnableViewState',true],['ExpandSlide',2],['ExpandDuration',200],['ExpandTransition',0],['ExpandCollapseImageHeight',0],['ExpandCollapseImageWidth',0],['ExpandedParentNodeImageUrl','folder_open.gif'],['ExpandSelectedPath',true],['ExpandNodeOnSelect',true],['HoverNodeCssClass','FileFolderTreeNodeHover'],['ImagesBaseUrl','/themes/default/images/file/'],['ItemSpacing',0],['KeyboardEnabled',true],['LeafNodeImageUrl','folder_open.gif'],['LineImageHeight',20],['LineImageWidth',19],['LineImagesFolderUrl','/themes/default/images/file/lines/'],['LoadingFeedbackText','Loading...'],['MarginWidth',32],['MultipleSelectEnabled',true],['NodeCssClass','FileFolderTreeNode'],['NodeLabelPadding',3],['NodeIndent',16],['ParentNodeImageUrl','folder.gif'],['ShowLines',true],['SelectedNodeCssClass','FileFolderTreeNodeSelected'],];
+ctl00_ctl01_lcr_FolderTree___Tree.Initialize('ctl00_ctl01_lcr_FolderTree___Tree_div');
+
+window.ctl00_ctl01_lcr_FolderTree___Tree_loaded = true;
+}
+ComponentArt_Init_ctl00_ctl01_lcr_FolderTree___Tree();
+//]]>
+</script>
+
+    
+    </div>
+</div>
+		</div>
+		             
+	
+                    </td>
+                    <td id="CommonBodyColumn" width="100%">
+                        <table style="table-layout: fixed;" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody><tr>
+                                <td>
+                                    
+
+<div>
+
+    
+	<h2 class="CommonTitle">
+		<div id="ctl00_ctl01_bcr_FolderGroupView1___Contentpart1">
+	
+			Files
+		
+</div>
+	</h2>
+	<div class="CommonContent">
+	
+	<a id="ctl00_ctl01_bcr_FolderGroupView1___DownloadLink" href="http://cutesoft.net/downloads/default.aspx?Sort=Downloads" style="font-weight:bold;">Most Downloads</a> |
+	<a id="ctl00_ctl01_bcr_FolderGroupView1___RatingLink" href="http://cutesoft.net/downloads/default.aspx?Sort=Ratings">Most Popular</a> |
+	<a id="ctl00_ctl01_bcr_FolderGroupView1___PostDateLink" href="http://cutesoft.net/downloads/default.aspx?Sort=Date">Most Recent</a> |
+	<a id="ctl00_ctl01_bcr_FolderGroupView1___CommentsLink" href="http://cutesoft.net/downloads/default.aspx?Sort=Comments">Most Comments</a>
+	
+	
+
+<div class="CommonListArea">
+	<h4 class="CommonListTitle">Most Downloads</h4>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<thead>
+		<tr>
+				<th class="CommonListHeaderLeftMost FileFileNameHeader">File</th>
+				<th class="CommonListHeader FileFileDateHeader">Date Added</th>
+				<th class="CommonListHeader FileFileDownloadCountHeader">Downloads</th>
+				<th class="CommonListHeader FileFileActionHeader">&nbsp;</th>
+			</tr>
+		</thead>
+		<tbody>		
+		
+		
+				<tr>
+					<td class="CommonListCellLeftMost FileFileNameColumn">
+						<div class="FileFileName"><a href="http://cutesoft.net/downloads/folders/cute_editor_current_releases/entry21904.aspx"><img src="Files_files/zip-Small.gif" align="AbsMiddle" border="0"></a> <a id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_Name_0" href="http://cutesoft.net/downloads/folders/cute_editor_current_releases/entry21904.aspx">1. Cute Editor for .NET </a></div>
+						<div class="FileFileDescription">Cute Editor for .NET version 6.7 - #1 WYSIWYG HTML...</div>
+						<div class="FileFileRating">
+							
+									<span class="CommonRateControlReadOnly" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_0_RatePost_0" title="Rated Good [4 out of 5 / rated 11 time(s)]." onclick="OpenWindow('/utility/PostRating.aspx?PostID=7348')" style="cursor: pointer;"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-off.gif" align="absmiddle" border="0"><img src="Files_files/star-right-off.gif" align="absmiddle" border="0"></span><input value="4" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_0_RatePost_0_Value" type="hidden"><br>
+								
+						</div>
+					</td>
+					<td class="CommonListCell FileFileDateColumn">
+						Wed, Mar 08 2017
+					</td>
+					<td class="CommonListCell FileFileDownloadCountColumn">
+						322760
+					</td>
+					<td class="CommonListCell FileFileActionColumn">
+						<a href="http://cutesoft.net/downloads/folders/21904/download.aspx" class="CommonImageTextButton" style="background-image: url(/Themes/default/images/file/Download.gif);">Download</a>
+						<div class="FileFileDetail">File Size 16.3MB</div>
+					</td>
+				</tr>
+			
+				<tr>
+					<td class="CommonListCellLeftMost FileFileNameColumn">
+						<div class="FileFileName"><a href="http://cutesoft.net/downloads/folders/chat_current_releases/entry21915.aspx"><img src="Files_files/zip-Small.gif" align="AbsMiddle" border="0"></a> <a id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_Name_1" href="http://cutesoft.net/downloads/folders/chat_current_releases/entry21915.aspx">1. Chat/Web Messenger standalone </a></div>
+						<div class="FileFileDescription">Cute Chat is a full-featured ASP.NET chat program....</div>
+						<div class="FileFileRating">
+							
+									<span class="CommonRateControlReadOnly" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_1_RatePost_1" title="Rated Good [4 out of 5 / rated 5 time(s)]." onclick="OpenWindow('/utility/PostRating.aspx?PostID=7359')" style="cursor: pointer;"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-off.gif" align="absmiddle" border="0"><img src="Files_files/star-right-off.gif" align="absmiddle" border="0"></span><input value="4" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_1_RatePost_1_Value" type="hidden"><br>
+								
+						</div>
+					</td>
+					<td class="CommonListCell FileFileDateColumn">
+						Wed, Mar 08 2017
+					</td>
+					<td class="CommonListCell FileFileDownloadCountColumn">
+						127322
+					</td>
+					<td class="CommonListCell FileFileActionColumn">
+						<a href="http://cutesoft.net/downloads/folders/21915/download.aspx" class="CommonImageTextButton" style="background-image: url(/Themes/default/images/file/Download.gif);">Download</a>
+						<div class="FileFileDetail">File Size 3.8MB</div>
+					</td>
+				</tr>
+			
+				<tr>
+					<td class="CommonListCellLeftMost FileFileNameColumn">
+						<div class="FileFileName"><a href="http://cutesoft.net/downloads/folders/gallery_current_releases/entry21926.aspx"><img src="Files_files/zip-Small.gif" align="AbsMiddle" border="0"></a> <a id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_Name_2" href="http://cutesoft.net/downloads/folders/gallery_current_releases/entry21926.aspx">ASP.NET Image Gallery (New version 3.1!)</a></div>
+						<div class="FileFileDescription">DotNetGallery is an ASP.NET server control designe...</div>
+						<div class="FileFileRating">
+							
+									<span class="CommonRateControlReadOnly" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_2_RatePost_2" title="Rated Good [4 out of 5 / rated 6 time(s)]." onclick="OpenWindow('/utility/PostRating.aspx?PostID=7370')" style="cursor: pointer;"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-off.gif" align="absmiddle" border="0"><img src="Files_files/star-right-off.gif" align="absmiddle" border="0"></span><input value="4" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_2_RatePost_2_Value" type="hidden"><br>
+								
+						</div>
+					</td>
+					<td class="CommonListCell FileFileDateColumn">
+						Wed, Mar 08 2017
+					</td>
+					<td class="CommonListCell FileFileDownloadCountColumn">
+						52125
+					</td>
+					<td class="CommonListCell FileFileActionColumn">
+						<a href="http://cutesoft.net/downloads/folders/21926/download.aspx" class="CommonImageTextButton" style="background-image: url(/Themes/default/images/file/Download.gif);">Download</a>
+						<div class="FileFileDetail">File Size 1.8MB</div>
+					</td>
+				</tr>
+			
+				<tr>
+					<td class="CommonListCellLeftMost FileFileNameColumn">
+						<div class="FileFileName"><a href="http://cutesoft.net/downloads/folders/current_releases/entry21855.aspx"><img src="Files_files/zip-Small.gif" align="AbsMiddle" border="0"></a> <a id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_Name_3" href="http://cutesoft.net/downloads/folders/current_releases/entry21855.aspx">1. Cute Live Support standalone</a></div>
+						<div class="FileFileDescription">Cute live support is a real-time online chat suppo...</div>
+						<div class="FileFileRating">
+							
+									<span class="CommonRateControlReadOnly" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_3_RatePost_3" title="Rated Good [4 out of 5 / rated 3 time(s)]." onclick="OpenWindow('/utility/PostRating.aspx?PostID=7322')" style="cursor: pointer;"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-off.gif" align="absmiddle" border="0"><img src="Files_files/star-right-off.gif" align="absmiddle" border="0"></span><input value="4" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_3_RatePost_3_Value" type="hidden"><br>
+								
+						</div>
+					</td>
+					<td class="CommonListCell FileFileDateColumn">
+						Wed, Mar 08 2017
+					</td>
+					<td class="CommonListCell FileFileDownloadCountColumn">
+						42001
+					</td>
+					<td class="CommonListCell FileFileActionColumn">
+						<a href="http://cutesoft.net/downloads/folders/21855/download.aspx" class="CommonImageTextButton" style="background-image: url(/Themes/default/images/file/Download.gif);">Download</a>
+						<div class="FileFileDetail">File Size 9.7MB</div>
+					</td>
+				</tr>
+			
+				<tr>
+					<td class="CommonListCellLeftMost FileFileNameColumn">
+						<div class="FileFileName"><a href="http://cutesoft.net/downloads/folders/asp-editor/entry57121.aspx"><img src="Files_files/zip-Small.gif" align="AbsMiddle" border="0"></a> <a id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_Name_4" href="http://cutesoft.net/downloads/folders/asp-editor/entry57121.aspx">Cute Editor for Classic ASP 6.6</a></div>
+						<div class="FileFileDescription">Leading Online Rich Text Editor Cute Editor for Cl...</div>
+						<div class="FileFileRating">
+							
+									<span class="CommonRateControlReadOnly" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_4_RatePost_4" title="Rated Excellent [5 out of 5 / rated 1 time(s)]." onclick="OpenWindow('/utility/PostRating.aspx?PostID=18693')" style="cursor: pointer;"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"></span><input value="5" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_4_RatePost_4_Value" type="hidden"><br>
+								
+						</div>
+					</td>
+					<td class="CommonListCell FileFileDateColumn">
+						Wed, Mar 08 2017
+					</td>
+					<td class="CommonListCell FileFileDownloadCountColumn">
+						27899
+					</td>
+					<td class="CommonListCell FileFileActionColumn">
+						<a href="http://cutesoft.net/downloads/folders/57121/download.aspx" class="CommonImageTextButton" style="background-image: url(/Themes/default/images/file/Download.gif);">Download</a>
+						<div class="FileFileDetail">File Size 6.4MB</div>
+					</td>
+				</tr>
+			
+				<tr>
+					<td class="CommonListCellLeftMost FileFileNameColumn">
+						<div class="FileFileName"><a href="http://cutesoft.net/downloads/folders/chat_current_releases/entry21916.aspx"><img src="Files_files/zip-Small.gif" align="AbsMiddle" border="0"></a> <a id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_Name_5" href="http://cutesoft.net/downloads/folders/chat_current_releases/entry21916.aspx">2. Chat/Web Messenger for Community Server 2.1</a></div>
+						<div class="FileFileDescription">Chat/Web Messenger for Community Server 2.1 Cute C...</div>
+						<div class="FileFileRating">
+							
+						</div>
+					</td>
+					<td class="CommonListCell FileFileDateColumn">
+						Wed, Mar 08 2017
+					</td>
+					<td class="CommonListCell FileFileDownloadCountColumn">
+						21948
+					</td>
+					<td class="CommonListCell FileFileActionColumn">
+						<a href="http://cutesoft.net/downloads/folders/21916/download.aspx" class="CommonImageTextButton" style="background-image: url(/Themes/default/images/file/Download.gif);">Download</a>
+						<div class="FileFileDetail">File Size 4.8MB</div>
+					</td>
+				</tr>
+			
+				<tr>
+					<td class="CommonListCellLeftMost FileFileNameColumn">
+						<div class="FileFileName"><a href="http://cutesoft.net/downloads/folders/operator_client/entry21869.aspx"><img src="Files_files/msi-Small.gif" align="AbsMiddle" border="0"></a> <a id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_Name_6" href="http://cutesoft.net/downloads/folders/operator_client/entry21869.aspx">Cute Live Support Operator Client</a></div>
+						<div class="FileFileDescription">Cute Live Support Operator Client is our downloada...</div>
+						<div class="FileFileRating">
+							
+									<span class="CommonRateControlReadOnly" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_6_RatePost_6" title="Rated Excellent [5 out of 5 / rated 1 time(s)]." onclick="OpenWindow('/utility/PostRating.aspx?PostID=7334')" style="cursor: pointer;"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"></span><input value="5" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_6_RatePost_6_Value" type="hidden"><br>
+								
+						</div>
+					</td>
+					<td class="CommonListCell FileFileDateColumn">
+						Wed, Aug 26 2009
+					</td>
+					<td class="CommonListCell FileFileDownloadCountColumn">
+						20294
+					</td>
+					<td class="CommonListCell FileFileActionColumn">
+						<a href="http://cutesoft.net/downloads/folders/21869/download.aspx" class="CommonImageTextButton" style="background-image: url(/Themes/default/images/file/Download.gif);">Download</a>
+						<div class="FileFileDetail">File Size 900.4kB</div>
+					</td>
+				</tr>
+			
+				<tr>
+					<td class="CommonListCellLeftMost FileFileNameColumn">
+						<div class="FileFileName"><a href="http://cutesoft.net/downloads/folders/chat_current_releases/entry28676.aspx"><img src="Files_files/zip-Small.gif" align="AbsMiddle" border="0"></a> <a id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_Name_7" href="http://cutesoft.net/downloads/folders/chat_current_releases/entry28676.aspx">6. Chat/Web Messenger integration package </a></div>
+						<div class="FileFileDescription">Cute Chat is a full-featured ASP.NET chat program....</div>
+						<div class="FileFileRating">
+							
+									<span class="CommonRateControlReadOnly" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_7_RatePost_7" title="Rated Excellent [5 out of 5 / rated 1 time(s)]." onclick="OpenWindow('/utility/PostRating.aspx?PostID=9249')" style="cursor: pointer;"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"></span><input value="5" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_7_RatePost_7_Value" type="hidden"><br>
+								
+						</div>
+					</td>
+					<td class="CommonListCell FileFileDateColumn">
+						Wed, Mar 08 2017
+					</td>
+					<td class="CommonListCell FileFileDownloadCountColumn">
+						18770
+					</td>
+					<td class="CommonListCell FileFileActionColumn">
+						<a href="http://cutesoft.net/downloads/folders/28676/download.aspx" class="CommonImageTextButton" style="background-image: url(/Themes/default/images/file/Download.gif);">Download</a>
+						<div class="FileFileDetail">File Size 4.8MB</div>
+					</td>
+				</tr>
+			
+				<tr>
+					<td class="CommonListCellLeftMost FileFileNameColumn">
+						<div class="FileFileName"><a href="http://cutesoft.net/downloads/folders/chat_current_releases/entry21917.aspx"><img src="Files_files/zip-Small.gif" align="AbsMiddle" border="0"></a> <a id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_Name_8" href="http://cutesoft.net/downloads/folders/chat_current_releases/entry21917.aspx">3. Chat/Messenger for Community Server 2007</a></div>
+						<div class="FileFileDescription">Chat/Web Messenger for Community Server 2007 Cute ...</div>
+						<div class="FileFileRating">
+							
+									<span class="CommonRateControlReadOnly" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_8_RatePost_8" title="Rated Excellent [5 out of 5 / rated 2 time(s)]." onclick="OpenWindow('/utility/PostRating.aspx?PostID=7361')" style="cursor: pointer;"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"></span><input value="5" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_8_RatePost_8_Value" type="hidden"><br>
+								
+						</div>
+					</td>
+					<td class="CommonListCell FileFileDateColumn">
+						Wed, Mar 08 2017
+					</td>
+					<td class="CommonListCell FileFileDownloadCountColumn">
+						16841
+					</td>
+					<td class="CommonListCell FileFileActionColumn">
+						<a href="http://cutesoft.net/downloads/folders/21917/download.aspx" class="CommonImageTextButton" style="background-image: url(/Themes/default/images/file/Download.gif);">Download</a>
+						<div class="FileFileDetail">File Size 4.9MB</div>
+					</td>
+				</tr>
+			
+				<tr>
+					<td class="CommonListCellLeftMost FileFileNameColumn">
+						<div class="FileFileName"><a href="http://cutesoft.net/downloads/folders/cute_editor_current_releases/entry21905.aspx"><img src="Files_files/zip-Small.gif" align="AbsMiddle" border="0"></a> <a id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_Name_9" href="http://cutesoft.net/downloads/folders/cute_editor_current_releases/entry21905.aspx">2. Cute Editor for DotNetNuke 4.x</a></div>
+						<div class="FileFileDescription">( Version 6.6 ) Cute Editor for DotNetNuke 4.x - #...</div>
+						<div class="FileFileRating">
+							
+									<span class="CommonRateControlReadOnly" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_9_RatePost_9" title="Rated Excellent [5 out of 5 / rated 1 time(s)]." onclick="OpenWindow('/utility/PostRating.aspx?PostID=7349')" style="cursor: pointer;"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"><img src="Files_files/star-left-on.gif" align="absmiddle" border="0"><img src="Files_files/star-right-on.gif" align="absmiddle" border="0"></span><input value="5" id="ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_9_RatePost_9_Value" type="hidden"><br>
+								
+						</div>
+					</td>
+					<td class="CommonListCell FileFileDateColumn">
+						Wed, Mar 08 2017
+					</td>
+					<td class="CommonListCell FileFileDownloadCountColumn">
+						16462
+					</td>
+					<td class="CommonListCell FileFileActionColumn">
+						<a href="http://cutesoft.net/downloads/folders/21905/download.aspx" class="CommonImageTextButton" style="background-image: url(/Themes/default/images/file/Download.gif);">Download</a>
+						<div class="FileFileDetail">File Size 8.1MB</div>
+					</td>
+				</tr>
+			
+		
+	</tbody></table>
+</div>
+	
+
+	
+	
+
+</div>		
+
+
+
+
+<!-- Google Code for Views of a key page Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1071804260;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "666666";
+var google_conversion_label = "pageview";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="Files_files/conversion.js">
+</script><img alt="" src="Files_files/a.gif" style="display:none" border="0" height="1" width="1">
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1071804260/?label=pageview&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+	
+                                </div></td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                    <td id="CommonRightColumn">
+                        
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+
+        <div id="CommonFooter">
+            <div class="container">
+    <div style="float:right">Powered by <a href="http://www.asp.net/" target="_blank"><img alt="ASP.Net" src="Files_files/aspdotnet.gif"></a></div>
+    <div style="text-align:left; margin-left:50px">Copyright 2003 - 2017  <a href="http://cutesoft.net/" title="CuteSoft Components">CuteSoft Components Inc.</a>. All rights reserved.</div>
+</div>
+
+        </div>
+    
+<script language="javascript" type="text/javascript">
+<!--
+function KeyDownHandlerctl00_ctl01_bhcr_t___TitleBarSearchButton(event)
+{
+	if (event.keyCode == 13)
+	{
+		event.returnValue = false;
+		event.cancel = true;
+     __doPostBack('ctl00$ctl01$bhcr$t$_$TitleBarSearchButton','')	}
+}
+
+//-->
+</script>
+<script language="javascript">var ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_0_RatePost_0=new RateControl('ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_0_RatePost_0','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_0_RatePost_0','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_0_RatePost_0_Value', 5, '/Themes/default/images/common/', false, 'CommonRateControl','CommonRateControlActive','CommonRateControlReadOnly',['Terrible','Poor','Fair','Average','Good','Excellent'],true,false);</script><script language="javascript">var ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_1_RatePost_1=new RateControl('ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_1_RatePost_1','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_1_RatePost_1','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_1_RatePost_1_Value', 5, '/Themes/default/images/common/', false, 'CommonRateControl','CommonRateControlActive','CommonRateControlReadOnly',['Terrible','Poor','Fair','Average','Good','Excellent'],true,false);</script><script language="javascript">var ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_2_RatePost_2=new RateControl('ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_2_RatePost_2','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_2_RatePost_2','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_2_RatePost_2_Value', 5, '/Themes/default/images/common/', false, 'CommonRateControl','CommonRateControlActive','CommonRateControlReadOnly',['Terrible','Poor','Fair','Average','Good','Excellent'],true,false);</script><script language="javascript">var ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_3_RatePost_3=new RateControl('ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_3_RatePost_3','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_3_RatePost_3','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_3_RatePost_3_Value', 5, '/Themes/default/images/common/', false, 'CommonRateControl','CommonRateControlActive','CommonRateControlReadOnly',['Terrible','Poor','Fair','Average','Good','Excellent'],true,false);</script><script language="javascript">var ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_4_RatePost_4=new RateControl('ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_4_RatePost_4','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_4_RatePost_4','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_4_RatePost_4_Value', 5, '/Themes/default/images/common/', false, 'CommonRateControl','CommonRateControlActive','CommonRateControlReadOnly',['Terrible','Poor','Fair','Average','Good','Excellent'],true,false);</script><script language="javascript">var ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_6_RatePost_6=new RateControl('ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_6_RatePost_6','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_6_RatePost_6','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_6_RatePost_6_Value', 5, '/Themes/default/images/common/', false, 'CommonRateControl','CommonRateControlActive','CommonRateControlReadOnly',['Terrible','Poor','Fair','Average','Good','Excellent'],true,false);</script><script language="javascript">var ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_7_RatePost_7=new RateControl('ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_7_RatePost_7','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_7_RatePost_7','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_7_RatePost_7_Value', 5, '/Themes/default/images/common/', false, 'CommonRateControl','CommonRateControlActive','CommonRateControlReadOnly',['Terrible','Poor','Fair','Average','Good','Excellent'],true,false);</script><script language="javascript">var ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_8_RatePost_8=new RateControl('ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_8_RatePost_8','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_8_RatePost_8','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_8_RatePost_8_Value', 5, '/Themes/default/images/common/', false, 'CommonRateControl','CommonRateControlActive','CommonRateControlReadOnly',['Terrible','Poor','Fair','Average','Good','Excellent'],true,false);</script><script language="javascript">var ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_9_RatePost_9=new RateControl('ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_9_RatePost_9','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_9_RatePost_9','ctl00_ctl01_bcr_FolderGroupView1___Entrylisting1___Entries_RatingListing_9_RatePost_9_Value', 5, '/Themes/default/images/common/', false, 'CommonRateControl','CommonRateControlActive','CommonRateControlReadOnly',['Terrible','Poor','Fair','Average','Good','Excellent'],true,false);</script></form>
+
+    
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-532471-3']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+
+
+
+</body><meta style="visibility: hidden !important; display: block !important; width: 0px !important; height: 0px !important; border-style: none !important;"><embed style="visibility: hidden !important; display: block !important; width: 1px !important; height: 1px !important; border-style: none !important; position: absolute !important; top: 0px !important; left: 0px !important;" type="application/x-eagleget" id="__EAGLEGET__" height="1" width="1"><meta style="visibility: hidden !important; display: block !important; width: 0px !important; height: 0px !important; border-style: none !important;"><embed style="visibility: hidden !important; display: block !important; width: 1px !important; height: 1px !important; border-style: none !important; position: absolute !important; top: 0px !important; left: 0px !important;" type="application/x-eagleget" id="__EAGLEGET__" height="1" width="1"></html>
