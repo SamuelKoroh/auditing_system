@@ -30,7 +30,7 @@ Partial Class UploadCredential
                 End Using
             End Using
         Catch ex As Exception
-            Response.Redirect("Default.aspx")
+            ' Response.Redirect("Default.aspx")
         End Try
     End Sub
 
